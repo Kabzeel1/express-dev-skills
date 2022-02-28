@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <body>
+    <h1>Skills</h1>
+    <% if(error) { %>
+      <h2><%= error %></h2>
+    <% } else { %>
+      <h2>Skill #<%= skill._id %></h2>
+      <h3><%= skill.type %></h3>
+      <p>Complete: <%= skill.have ? 'Yes' : 'No' %></p>
+    <% } %>
+    <a href="/skills">Go back</a>
+  </body>
+</body>
+</html>
